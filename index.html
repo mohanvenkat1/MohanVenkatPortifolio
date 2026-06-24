@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohan Venkat Dulapalli | Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Cinematic Loader Screen -->
+  <div class="loader-screen">
+    <div class="loader-glow-left"></div>
+    <div class="loader-glow-right"></div>
+    <div class="loader-grid-pattern"></div>
+    
+    <div class="loader-content-wrapper">
+      
+      <!-- Tech HUD rings -->
+      <div class="hud-container">
+        <svg class="hud-ring hud-ring-outer" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="1.5" stroke-dasharray="30 15 5 15 10 5" fill="none" />
+        </svg>
+        <svg class="hud-ring hud-ring-inner" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" stroke-dasharray="20 40 10 10" fill="none" stroke-linecap="round" />
+        </svg>
+        <div class="hud-core">M</div>
+      </div>
+
+      <!-- Loading steps / Diagnostics -->
+      <div class="loader-diagnostics">
+        <div class="loader-step step0">
+          <div class="console-line text-cyan">&gt; INITIALIZING PROTOCOL...</div>
+          <div class="console-line text-muted">Establishing secure handshake</div>
+        </div>
+        <div class="loader-step step1">
+          <div class="console-line text-purple">&gt; CONNECTIONS ESTABLISHED</div>
+          <div class="console-line text-bright">WELCOME</div>
+        </div>
+        <div class="loader-step step2">
+          <div class="name-reveal-wrapper">
+            <h1 class="cinematic-name">
+              <span style="animation-delay: 2.00s;">M</span><span style="animation-delay: 2.05s;">o</span><span style="animation-delay: 2.10s;">h</span><span style="animation-delay: 2.15s;">a</span><span style="animation-delay: 2.20s;">n</span><span style="animation-delay: 2.25s;">&nbsp;</span><span style="animation-delay: 2.30s;">V</span><span style="animation-delay: 2.35s;">e</span><span style="animation-delay: 2.40s;">n</span><span style="animation-delay: 2.45s;">k</span><span style="animation-delay: 2.50s;">a</span><span style="animation-delay: 2.55s;">t</span>
+            </h1>
+            <div class="laser-sweep"></div>
+          </div>
+          <p class="cinematic-subtitle">COMPUTER SCIENCE & ENGINEERING</p>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="loader-bar-container">
+      <div class="loader-bar-line"></div>
+    </div>
+  </div>
+
+  <!-- Ambient Background Glow Orbs -->
+  <div class="glow-orb glow-orb-primary"></div>
+  <div class="glow-orb glow-orb-secondary"></div>
+  <div class="glow-orb glow-orb-tertiary"></div>
+
+  <!-- Grid Pattern Overlay -->
+  <div class="grid-pattern"></div>
+
+  <!-- Sticky Header -->
+  <header>
+    <div class="max-w-6xl px-4 header-container flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="logo-icon">M</div>
+        <span class="logo-text">Mohan Venkat</span>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="header-socials">
+          <a href="https://github.com/mohanvenkat1" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/mohanvenkatdulapalli?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect width="4" height="12" x="2" y="9"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://leetcode.com/u/MOHAN_VENKAT_1/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode Profile">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M13.483 0a1.39 1.39 0 0 0-.961.438L7.116 6.226a1.39 1.39 0 0 0-.44 1.012c0 .375.156.733.44 1.012l5.41 5.42a1.39 1.39 0 0 0 1.97 0L19.92 8.25a1.39 1.39 0 0 0 0-1.97L14.5 1.1a1.39 1.39 0 0 0-1.017-.438zM6.226 7.116a1.39 1.39 0 0 0-1.012.44L.438 12.966a1.39 1.39 0 0 0 0 1.97l5.42 5.41a1.39 1.39 0 0 0 1.97 0l5.42-5.41a1.39 1.39 0 0 0 0-1.97l-5.42-5.42a1.39 1.39 0 0 0-1.012-.441zm11.548 11.548a1.39 1.39 0 0 0-1.012.44l-5.42 5.41a1.39 1.39 0 0 0 0 1.97l5.42 5.42a1.39 1.39 0 0 0 1.97 0l5.42-5.42a1.39 1.39 0 0 0 0-1.97l-5.42-5.41a1.39 1.39 0 0 0-1.012-.441z"/></svg>
+          </a>
+          <a href="https://www.codechef.com/users/mohan_venkat" target="_blank" rel="noopener noreferrer" aria-label="CodeChef Profile">
+            <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M6 18H18V12H6V18Z"/><path d="M12 2C8.5 2 6 4.5 6 8C6 9.5 7 11 8.5 12H15.5C17 11 18 9.5 18 8C18 4.5 15.5 2 12 2Z"/><path d="M3 22H21"/></svg>
+          </a>
+        </div>
+        <a href="mailto:mohanvenkatdulapalli@gmail.com" class="btn-header">Say Hello</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl px-4 space-y-32 relative z-10">
+    
+    <!-- Hero Section -->
+    <section id="about" style="padding-top: 2rem;">
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text -->
+        <div id="about-text" class="md:col-span-7 space-y-6">
+          <div class="badge-available">
+            <!-- Sparkles SVG -->
+            <svg class="lucide-icon" style="width: 0.875rem; height: 0.875rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+            </svg>
+            Available for Internships
+          </div>
+          
+          <h1 class="hero-title">
+            Hey, I'm <br>
+            <span class="text-gradient">Mohan Venkat Dulapalli</span>
+          </h1>
+          
+          <p class="hero-objective">
+            An enthusiastic and analytical B.Tech student (Computer Science and Engineering) with skills in Java, Python, and web development. Seeking internships/co-op opportunities to enhance technical expertise and expand professional networks.
+          </p>
+
+          <!-- Contact Quick Links -->
+          <div class="contact-quick-links">
+            <a href="mailto:mohanvenkatdulapalli@gmail.com" class="contact-pill email">
+              <!-- Mail SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              mohanvenkatdulapalli@gmail.com
+            </a>
+            <a href="tel:+919030669229" class="contact-pill phone">
+              <!-- Phone SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              +91 9030669229
+            </a>
+            <a href="https://leetcode.com/u/MOHAN_VENKAT_1/" target="_blank" rel="noopener noreferrer" class="contact-pill email">
+              <!-- Leetcode SVG -->
+              <svg style="width: 1rem; height: 1rem; color: #eab308;" fill="currentColor" viewBox="0 0 24 24"><path d="M13.483 0a1.39 1.39 0 0 0-.961.438L7.116 6.226a1.39 1.39 0 0 0-.44 1.012c0 .375.156.733.44 1.012l5.41 5.42a1.39 1.39 0 0 0 1.97 0L19.92 8.25a1.39 1.39 0 0 0 0-1.97L14.5 1.1a1.39 1.39 0 0 0-1.017-.438zM6.226 7.116a1.39 1.39 0 0 0-1.012.44L.438 12.966a1.39 1.39 0 0 0 0 1.97l5.42 5.41a1.39 1.39 0 0 0 1.97 0l5.42-5.41a1.39 1.39 0 0 0 0-1.97l-5.42-5.42a1.39 1.39 0 0 0-1.012-.441zm11.548 11.548a1.39 1.39 0 0 0-1.012.44l-5.42 5.41a1.39 1.39 0 0 0 0 1.97l5.42 5.42a1.39 1.39 0 0 0 1.97 0l5.42-5.42a1.39 1.39 0 0 0 0-1.97l-5.42-5.41a1.39 1.39 0 0 0-1.012-.441z"/></svg>
+              LeetCode
+            </a>
+            <a href="https://www.codechef.com/users/mohan_venkat" target="_blank" rel="noopener noreferrer" class="contact-pill phone">
+              <!-- Codechef SVG -->
+              <svg style="width: 1rem; height: 1rem; color: #f97316;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M6 18H18V12H6V18Z"/><path d="M12 2C8.5 2 6 4.5 6 8C6 9.5 7 11 8.5 12H15.5C17 11 18 9.5 18 8C18 4.5 15.5 2 12 2Z"/><path d="M3 22H21"/></svg>
+              CodeChef
+            </a>
+          </div>
+          
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View My Projects</a>
+            <a href="https://github.com/mohanvenkat1" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <!-- Github SVG -->
+              <svg class="lucide-icon" style="width: 1.25rem; height: 1.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              GitHub Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Photo Frame -->
+        <div id="about-profile-wrapper" class="md:col-span-5 profile-card-wrapper">
+          <div class="profile-halo"></div>
+          <div class="profile-card">
+            <div class="profile-card-glow-top"></div>
+            <div class="profile-card-glow-bottom"></div>
+
+            <div class="profile-card-inner">
+              <div class="profile-img-frame">
+                <img src="profile.jpg" alt="Mohan Venkat Dulapalli">
+                <div class="profile-img-overlay"></div>
+              </div>
+
+              <div style="margin-top: 0.5rem;">
+                <h3 class="profile-name">Mohan Venkat Dulapalli</h3>
+                <p class="profile-role">B.Tech CSE Student</p>
+              </div>
+              
+              <div class="profile-badges">
+                <span class="profile-badge">CGPA: 8.910</span>
+                <span class="profile-badge profile-badge-cyan">Class of 2027</span>
+              </div>
+            </div>
+
+            <div class="profile-footer">
+              <span>VIT BHIMAVARAM</span>
+              <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section id="projects" class="space-y-8 reveal">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          Hover over a card to pause the floating animation and zoom in. Each card is rendered with smooth spring-like responsiveness.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="perspective-1000">
+          <div class="project-card">
+            <div class="project-card-border-glow"></div>
+            <div class="project-card-radial-glow"></div>
+
+            <div class="project-card-content">
+              <div class="project-card-image-wrapper">
+                <div class="project-card-image-gradient">
+                  <div class="project-card-image-blur"></div>
+                  <!-- Code SVG -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m18 16 4-4-4-4"></path>
+                    <path d="m6 8-4 4 4 4"></path>
+                    <path d="m14.5 4-5 16"></path>
+                  </svg>
+                </div>
+                <div class="project-card-badge">Project</div>
+              </div>
+
+              <h3 class="project-card-title">NewsTech - AI News Platform</h3>
+              <p class="project-card-desc">
+                A real-time tech news aggregation platform featuring secure user authentication, article saving, and custom categorization. Developed to deliver seamless global tech updates with responsive UI navigation.
+              </p>
+
+              <div class="project-card-tags">
+                <span class="project-card-tag">HTML</span>
+                <span class="project-card-tag">CSS</span>
+                <span class="project-card-tag">JavaScript</span>
+                <span class="project-card-tag">APIs</span>
+                <span class="project-card-tag">NewsAPI</span>
+              </div>
+
+              <div class="project-card-links">
+                <a href="https://github.com/mohanvenkat1/-NewsTech-401-GroupProject" target="_blank" rel="noopener noreferrer" class="project-card-link github">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                  GitHub
+                </a>
+                <a href="https://newstech-401-groupproject-8.onrender.com/index.html" target="_blank" rel="noopener noreferrer" class="project-card-link live">
+                  Live Demo
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="perspective-1000">
+          <div class="project-card">
+            <div class="project-card-border-glow"></div>
+            <div class="project-card-radial-glow"></div>
+
+            <div class="project-card-content">
+              <div class="project-card-image-wrapper">
+                <div class="project-card-image-gradient">
+                  <div class="project-card-image-blur"></div>
+                  <!-- Code SVG -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m18 16 4-4-4-4"></path>
+                    <path d="m6 8-4 4 4 4"></path>
+                    <path d="m14.5 4-5 16"></path>
+                  </svg>
+                </div>
+                <div class="project-card-badge">Project</div>
+              </div>
+
+              <h3 class="project-card-title">MERN Stack Portfolio</h3>
+              <p class="project-card-desc">
+                A premium glassmorphic personal showcase website built with Framer Motion animations, custom dark theme, and interactive contact forms.
+              </p>
+
+              <div class="project-card-tags">
+                <span class="project-card-tag">React</span>
+                <span class="project-card-tag">Tailwind CSS</span>
+                <span class="project-card-tag">Framer Motion</span>
+                <span class="project-card-tag">Vite</span>
+              </div>
+
+              <div class="project-card-links">
+                <a href="https://github.com/mohanvenkat1" target="_blank" rel="noopener noreferrer" class="project-card-link github">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="perspective-1000">
+          <div class="project-card">
+            <div class="project-card-border-glow"></div>
+            <div class="project-card-radial-glow"></div>
+
+            <div class="project-card-content">
+              <div class="project-card-image-wrapper">
+                <div class="project-card-image-gradient">
+                  <div class="project-card-image-blur"></div>
+                  <!-- Code SVG -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m18 16 4-4-4-4"></path>
+                    <path d="m6 8-4 4 4 4"></path>
+                    <path d="m14.5 4-5 16"></path>
+                  </svg>
+                </div>
+                <div class="project-card-badge">Project</div>
+              </div>
+
+              <h3 class="project-card-title">AWS Cloud Model Deployer</h3>
+              <p class="project-card-desc">
+                A lightweight cloud-native utility to automate AWS SageMaker and Lambda deployments of machine learning models for low-latency inferencing.
+              </p>
+
+              <div class="project-card-tags">
+                <span class="project-card-tag">AWS Lambda</span>
+                <span class="project-card-tag">SageMaker</span>
+                <span class="project-card-tag">Python</span>
+                <span class="project-card-tag">Boto3</span>
+              </div>
+
+              <div class="project-card-links">
+                <a href="https://github.com/mohanvenkat1" target="_blank" rel="noopener noreferrer" class="project-card-link github">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="space-y-8 reveal">
+      <div class="section-header">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">
+          Bridging academic concepts with industrial and cloud-native practices.
+        </p>
+      </div>
+
+      <div class="experience-timeline">
+        
+        <!-- Experience 1 -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-role-title">
+                <!-- Briefcase SVG -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H9a2 2 0 0 0-2 2v2h10V4a2 2 0 0 0-2-2Z"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect><path d="M12 11h.01"></path><path d="M17 16h-10"></path></svg>
+                Full Stack Development Intern (MERN)
+              </h3>
+              <p class="experience-company">SmartBridge Educational Services Pvt. Ltd. | APSCHE</p>
+            </div>
+            <span class="experience-duration">
+              <!-- Calendar SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 2v4"></path><path d="M16 2v4"></path></svg>
+              Oct 2025 – Mar 2026
+            </span>
+          </div>
+          
+          <ul class="experience-list">
+            <li class="experience-item">
+              <!-- ChevronRight SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+              <span>Developed full-stack web applications using MongoDB, Express.js, React, and Node.js.</span>
+            </li>
+            <li class="experience-item">
+              <!-- ChevronRight SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+              <span>Built and integrated REST APIs and gained experience in frontend-backend integration and deployment.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <div>
+              <h3 class="experience-role-title">
+                <!-- Briefcase SVG -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H9a2 2 0 0 0-2 2v2h10V4a2 2 0 0 0-2-2Z"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect><path d="M12 11h.01"></path><path d="M17 16h-10"></path></svg>
+                AI-ML Virtual Intern
+              </h3>
+              <p class="experience-company">EduSkills & AICTE | AWS Academy</p>
+            </div>
+            <span class="experience-duration">
+              <!-- Calendar SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 2v4"></path><path d="M16 2v4"></path></svg>
+              Apr 2025 – Jun 2025
+            </span>
+          </div>
+          
+          <ul class="experience-list">
+            <li class="experience-item">
+              <!-- ChevronRight SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+              <span>Completed a 10-week internship building and evaluating supervised and unsupervised models.</span>
+            </li>
+            <li class="experience-item">
+              <!-- ChevronRight SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+              <span>Utilized AWS SageMaker, Lambda, and Jupyter Notebooks to develop and deploy cloud-based solutions.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="space-y-8 reveal">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Tech Stack</h2>
+        <p class="section-subtitle">
+          Comprehensive list of my academic coursework, programming skills, databases, and developer environments.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Programming Languages -->
+        <div class="skills-card">
+          <h3 class="skills-title languages">
+            <!-- Code SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
+            Programming Languages
+          </h3>
+          <div class="skills-tags">
+            <span class="skills-tag">C</span>
+            <span class="skills-tag">Python</span>
+            <span class="skills-tag">Java</span>
+          </div>
+        </div>
+
+        <!-- Web Technologies -->
+        <div class="skills-card">
+          <h3 class="skills-title web">
+            <!-- Terminal SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" x2="20" y1="19" y2="19"></line></svg>
+            Web Technologies
+          </h3>
+          <div class="skills-tags">
+            <span class="skills-tag">HTML</span>
+            <span class="skills-tag">CSS</span>
+            <span class="skills-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skills-card">
+          <h3 class="skills-title databases">
+            <!-- Database SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+            Databases
+          </h3>
+          <div class="skills-tags">
+            <span class="skills-tag">SQL</span>
+            <span class="skills-tag">MongoDB</span>
+          </div>
+        </div>
+
+        <!-- Developer Tools -->
+        <div class="skills-card">
+          <h3 class="skills-title tools">
+            <!-- Award SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            Developer Tools
+          </h3>
+          <div class="skills-tags">
+            <span class="skills-tag">Git/Github</span>
+            <span class="skills-tag">Google Colab</span>
+            <span class="skills-tag">VS Code</span>
+            <span class="skills-tag">Kaggle</span>
+          </div>
+        </div>
+
+        <!-- Academic Coursework -->
+        <div class="skills-card">
+          <h3 class="skills-title coursework">
+            <!-- BookOpen SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            Academic Coursework
+          </h3>
+          <div class="skills-tags">
+            <span class="skills-tag">Data Structures</span>
+            <span class="skills-tag">Operating Systems (Windows, Unix/Linux)</span>
+            <span class="skills-tag">OOP</span>
+            <span class="skills-tag">DBMS</span>
+          </div>
+        </div>
+
+        <!-- Productivity Tools -->
+        <div class="skills-card">
+          <h3 class="skills-title productivity">
+            <!-- TrendingUp SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+            Productivity Tools
+          </h3>
+          <div class="skills-tags">
+            <span class="skills-tag">MS Excel</span>
+            <span class="skills-tag">MS Word</span>
+            <span class="skills-tag">MS PowerPoint</span>
+            <span class="skills-tag">Google Sheets</span>
+            <span class="skills-tag">Google Docs</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications & Hackathons Split -->
+    <div class="info-section-grid reveal">
+      
+      <!-- Certifications -->
+      <section id="certifications" class="space-y-6">
+        <h2 class="info-column-title certifications">
+          <!-- Award SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+          Certifications
+        </h2>
+        <div class="certifications-list">
+          <div class="certification-item has-image" data-cert-img="cert-salesforce-agentforce.png" data-cert-title="Salesforce Certified Agentforce Specialist">
+            <!-- Award Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            <span class="certification-name">Salesforce Certified Agentforce Specialist</span>
+          </div>
+          <div class="certification-item has-image" data-cert-img="cert-aws-internship.png" data-cert-title="AWS Academy AI-ML Certificate">
+            <!-- Award Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            <span class="certification-name">AWS Academy Graduate – AI/ML</span>
+          </div>
+          <div class="certification-item">
+            <!-- Award Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            <span class="certification-name">Prompt Design in Vertex AI (Google)</span>
+          </div>
+          <div class="certification-item has-image" data-cert-img="cert-kaggle-datavis.png" data-cert-title="Kaggle Data Visualization Certificate">
+            <!-- Award Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            <span class="certification-name">Kaggle – Data Visualization</span>
+          </div>
+          <div class="certification-item has-image" data-cert-img="cert-tata-forage.png" data-cert-title="Tata GenAI Powered Data Analytics Certification">
+            <!-- Award Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            <span class="certification-name">GenAI Powered Data Analytics (Tata | Forage)</span>
+          </div>
+          <div class="certification-item has-image" data-cert-img="cert-google-ambassador.png" data-cert-title="Google Student Ambassador Certificate">
+            <!-- Award Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            <span class="certification-name">Google Student Ambassador Program</span>
+          </div>
+          <div class="certification-item">
+            <!-- Award Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            <span class="certification-name">NPTEL – The Joy of Computing Using Python</span>
+          </div>
+          <div class="certification-item">
+            <!-- Award Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            <span class="certification-name">Programming in C</span>
+          </div>
+          <div class="certification-item">
+            <!-- Award Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            <span class="certification-name">Programming in Java</span>
+          </div>
+          <div class="certification-item has-image" data-cert-img="cert-mongodb-gfg.png" data-cert-title="GeeksforGeeks MongoDB Developer's Toolkit Certificate">
+            <!-- Award Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            <span class="certification-name">MongoDB Developer’s Toolkit (GeeksforGeeks)</span>
+          </div>
+          <div class="certification-item">
+            <!-- Award Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            <span class="certification-name">IBM SkillsBuild – AI Literacy</span>
+          </div>
+          <div class="certification-item has-image" data-cert-img="cert-mpower.png" data-cert-title="Mpower COPE Mental Health Awareness Certificate">
+            <!-- Award Icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12"></path></svg>
+            <span class="certification-name">Mpower COPE - Mental Health Awareness</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Activities & Hackathons -->
+      <section id="activities" class="space-y-6">
+        <h2 class="info-column-title activities">
+          <!-- Sparkles SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>
+          Hackathons & Leadership
+        </h2>
+        <div class="activities-list">
+          <div class="activity-item">
+            <h4 class="activity-item-header">
+              <!-- Cpu SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M9 1v3"></path><path d="M15 1v3"></path><path d="M9 20v3"></path><path d="M15 20v3"></path><path d="M20 9h3"></path><path d="M20 15h3"></path><path d="M1 9h3"></path><path d="M1 15h3"></path></svg>
+              SIH 2024
+            </h4>
+            <p class="activity-item-desc">Team-based real-world problem solving.</p>
+          </div>
+          <div class="activity-item">
+            <h4 class="activity-item-header">
+              <!-- Cpu SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M9 1v3"></path><path d="M15 1v3"></path><path d="M9 20v3"></path><path d="M15 20v3"></path><path d="M20 9h3"></path><path d="M20 15h3"></path><path d="M1 9h3"></path><path d="M1 15h3"></path></svg>
+              GDG Hackathon
+            </h4>
+            <p class="activity-item-desc">Top 10 among 70 teams.</p>
+          </div>
+          <div class="activity-item has-image" data-cert-img="cert-docathon.png" data-cert-title="Docathon 2024 Participation Certificate">
+            <h4 class="activity-item-header">
+              <!-- Cpu SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M9 1v3"></path><path d="M15 1v3"></path><path d="M9 20v3"></path><path d="M15 20v3"></path><path d="M20 9h3"></path><path d="M20 15h3"></path><path d="M1 9h3"></path><path d="M1 15h3"></path></svg>
+              Docathon 2024
+              <span class="view-badge">Verify 👁️</span>
+            </h4>
+            <p class="activity-item-desc">Research and publication-focused hackathon.</p>
+          </div>
+          <div class="activity-item has-image" data-cert-img="cert-cochamp.png" data-cert-title="Student Co-Champ Appreciation Certificate">
+            <h4 class="activity-item-header">
+              <!-- Cpu SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M9 1v3"></path><path d="M15 1v3"></path><path d="M9 20v3"></path><path d="M15 20v3"></path><path d="M20 9h3"></path><path d="M20 15h3"></path><path d="M1 9h3"></path><path d="M1 15h3"></path></svg>
+              Student Co-Champ, Vishnu Student Success Center
+              <span class="view-badge">Verify 👁️</span>
+            </h4>
+            <p class="activity-item-desc">Organized technical and cultural events.</p>
+          </div>
+          <div class="activity-item has-image" data-cert-img="cert-iste.png" data-cert-title="ISTE Student Member Certificate">
+            <h4 class="activity-item-header">
+              <!-- Cpu SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M9 1v3"></path><path d="M15 1v3"></path><path d="M9 20v3"></path><path d="M15 20v3"></path><path d="M20 9h3"></path><path d="M20 15h3"></path><path d="M1 9h3"></path><path d="M1 15h3"></path></svg>
+              ISTE Member (2025–2028)
+              <span class="view-badge">Verify 👁️</span>
+            </h4>
+            <p class="activity-item-desc">Technical Mentor, guided 40+ teams in hackathon.</p>
+          </div>
+          <div class="activity-item has-image" data-cert-img="cert-google-ambassador.png" data-cert-title="Google Student Ambassador Certificate">
+            <h4 class="activity-item-header">
+              <!-- Cpu SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M9 1v3"></path><path d="M15 1v3"></path><path d="M9 20v3"></path><path d="M15 20v3"></path><path d="M20 9h3"></path><path d="M20 15h3"></path><path d="M1 9h3"></path><path d="M1 15h3"></path></svg>
+              Google Student Ambassador
+              <span class="view-badge">Verify 👁️</span>
+            </h4>
+            <p class="activity-item-desc">Promoted tech initiative.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Education Section -->
+    <section id="education" class="space-y-8 reveal">
+      <div class="section-header">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">
+          My academic timeline and benchmarks.
+        </p>
+      </div>
+
+      <div class="education-timeline">
+        
+        <!-- Education 1 -->
+        <div class="education-card">
+          <div class="education-main">
+            <h3 class="education-degree">
+              <!-- BookOpen SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+              B.Tech in Computer Science & Engineering
+            </h3>
+            <p class="education-institution">Vishnu Institute of Technology | <span class="education-location">Bhimavaram, AP, India</span></p>
+            <p class="education-details">CGPA: 8.910/10</p>
+          </div>
+          <span class="education-duration">
+            <!-- Calendar SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 2v4"></path><path d="M16 2v4"></path></svg>
+            Expected 2027
+          </span>
+        </div>
+
+        <!-- Education 2 -->
+        <div class="education-card">
+          <div class="education-main">
+            <h3 class="education-degree">
+              <!-- BookOpen SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+              Intermediate (MPC)
+            </h3>
+            <p class="education-institution">Sasi Junior College | <span class="education-location">Tadepalligudem, AP, India</span></p>
+            <p class="education-details">Percentage: 95.8%</p>
+          </div>
+          <span class="education-duration">
+            <!-- Calendar SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 2v4"></path><path d="M16 2v4"></path></svg>
+            2021 – 2023
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="max-w-6xl px-4 footer-container">
+      <div class="footer-brand">
+        <span>Mohan Venkat Dulapalli</span>
+        <span>&copy; <span id="current-year"></span></span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:mohanvenkatdulapalli@gmail.com">Email</a>
+        <a href="https://github.com/mohanvenkat1" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/mohanvenkatdulapalli?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+      <div class="footer-credit">
+        Made with 
+        <!-- Heart SVG -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+        &amp; HTML/CSS
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate Modal Overlay -->
+  <div id="cert-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close-btn" aria-label="Close modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <img id="modal-img" src="" alt="Certificate Image">
+      <div id="modal-caption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript Interactions -->
+  <script>
+    // 1. Set current year in footer dynamically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // 2. Scroll Progress indicator logic
+    const scrollProgress = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+      const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalScroll > 0) {
+        const percentage = window.scrollY / totalScroll;
+        scrollProgress.style.transform = `scaleX(${percentage})`;
+      } else {
+        scrollProgress.style.transform = 'scaleX(0)';
+      }
+    });
+
+    // 3. Project Cards Hover 3D Tilt and Mouse-follow Glow
+    const cards = document.querySelectorAll('.project-card');
+    cards.forEach((card, index) => {
+      // Assign different float delay to stagger animations
+      card.style.setProperty('--float-delay', `${index * 0.4}s`);
+      card.style.setProperty('--float-duration', `${3.0 + (index * 0.25)}s`);
+      
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const width = rect.width;
+        const height = rect.height;
+        
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        card.style.setProperty('--mouse-x', `${mouseX}px`);
+        card.style.setProperty('--mouse-y', `${mouseY}px`);
+        
+        // Tilt calculation (-6 to 6 deg for subtle feel)
+        const rotX = -((mouseY - height / 2) / (height / 2)) * 6;
+        const rotY = ((mouseX - width / 2) / (width / 2)) * 6;
+        
+        card.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.05)`;
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+        card.style.setProperty('--mouse-x', '-500px');
+        card.style.setProperty('--mouse-y', '-500px');
+      });
+    });
+
+    // 4. Hide loader pointer-events after fade-out completes
+    const loaderScreen = document.querySelector('.loader-screen');
+    // Loader exits after 3.6s for 0.9s, total duration is 4.5s
+    setTimeout(() => {
+      loaderScreen.style.pointerEvents = 'none';
+      loaderScreen.style.display = 'none';
+    }, 4500);
+
+    // 5. Trigger Hero Section entrance animations slightly before loader completely fades
+    setTimeout(() => {
+      document.getElementById('about-text').classList.add('visible');
+      document.getElementById('about-profile-wrapper').classList.add('visible');
+    }, 3800);
+
+    // 6. Intersection Observer for scroll reveal on other sections
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target); // Trigger once
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // 7. Interactive Certificate Popups
+    const certItems = document.querySelectorAll('[data-cert-img]');
+    const certModal = document.getElementById('cert-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalCaption = document.getElementById('modal-caption');
+    const modalClose = document.getElementById('modal-close');
+
+    certItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const imgSrc = item.getAttribute('data-cert-img');
+        const imgTitle = item.getAttribute('data-cert-title');
+        
+        modalImg.src = imgSrc;
+        modalCaption.textContent = imgTitle;
+        certModal.classList.add('active');
+      });
+    });
+
+    const closeModalFunc = () => {
+      certModal.classList.remove('active');
+      setTimeout(() => {
+        modalImg.src = '';
+        modalCaption.textContent = '';
+      }, 400);
+    };
+
+    modalClose.addEventListener('click', closeModalFunc);
+    
+    certModal.addEventListener('click', (e) => {
+      if (e.target === certModal) {
+        closeModalFunc();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && certModal.classList.contains('active')) {
+        closeModalFunc();
+      }
+    });
+  </script>
+</body>
+</html>
